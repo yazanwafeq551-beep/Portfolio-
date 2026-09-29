@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yazan Awawda — Front-End Developer & QA</title>
-<meta name="description" content="Yazan Awawda — Front-end developer (React, React Native, Tailwind CSS), QA tester and technical support. Ramallah, Palestine.">
+<title>Yazan Awawda — IT Specialist</title>
+<meta name="description" content="Yazan Awawda — IT Specialist: technical support, ERP/POS systems and front-end development (React, React Native). Ramallah, Palestine.">
 <meta name="theme-color" content="#0b0d10">
 <link rel="preload" as="image" href="assets/yazan.jpg">
 <style>
@@ -246,7 +246,10 @@
   .timeline p { color: #c8ced8; font-size: 15.5px; margin: 0; }
 
   /* ---------- skills ---------- */
-  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .skill-group.wide { grid-column: span 2; }
+  @media (max-width: 1000px) { .skills { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .skills { grid-template-columns: 1fr; } .skill-group.wide { grid-column: auto; } }
   .skill-group { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 24px; }
   .skill-group h3 { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 16px; }
   .skill-group h3::before { content: "// "; color: var(--dim); }
@@ -312,8 +315,8 @@
       <div class="reveal">
         <p class="hi">&lt;hello world /&gt;</p>
         <h1>Yazan Awawda</h1>
-        <p class="role"><em>Front-end developer</em> · QA tester · Technical support</p>
-        <p class="muted">I build interfaces with React, React Native and Tailwind CSS, and I test software until it breaks, then make sure it stays fixed.</p>
+        <p class="role"><em>IT Specialist</em> · Technical support · Front-end developer</p>
+        <p class="muted">I keep systems and the people using them running, and I build interfaces with React, React Native and Tailwind CSS.</p>
         <div class="meta">
           <span>IT graduate, Al-Quds University</span>
           <span>Ramallah, Palestine</span>
@@ -335,8 +338,8 @@
       <h2 class="reveal">About me</h2>
       <div class="about-grid">
         <div class="reveal">
-          <p>I'm an Information Technology graduate from Al-Quds University, based in Ramallah. My work sits at three points of the same product lifecycle: building the front end, testing it, and supporting the people who use it.</p>
-          <p>On the development side I work with React, React Native and Tailwind CSS, connecting interfaces to REST APIs. On the quality side I do manual QA across ERP and POS systems: reproducing bugs, reporting them clearly to developers, retesting fixes, and digging into logs, browser dev tools and SQL Server when something doesn't add up.</p>
+          <p>I'm an Information Technology graduate from Al-Quds University, based in Ramallah. Most of my hands-on work is technical support: diagnosing faults, finding the cause and getting users back to work, from hardware, Windows, drivers and printers to ERP and POS systems.</p>
+          <p>I also have a real programming background. I build front ends with React, React Native and Tailwind CSS, connect them to REST APIs, and work with SQL Server. That makes it faster for me to trace system and data problems, test apps properly and report bugs clearly to developers.</p>
         </div>
         <div class="facts reveal">
           <dl>
@@ -344,7 +347,7 @@
             <div><dt>certification</dt><dd>UI/UX Design<br><span class="muted">Al-Raja Al-Dawliya International · 2023</span></dd></div>
             <div><dt>languages</dt><dd>Arabic (native) · English (B1)</dd></div>
             <div><dt>location</dt><dd>Ramallah, Palestine</dd></div>
-            <div><dt>focus</dt><dd>Front-end · QA · Support</dd></div>
+            <div><dt>focus</dt><dd>IT support · ERP/POS · Front-end</dd></div>
           </dl>
         </div>
       </div>
@@ -417,9 +420,9 @@
       <ol class="timeline">
         <li class="reveal">
           <p class="when">Jun 2026 – Aug 2026</p>
-          <h3>QA Testing &amp; Technical Support (ERP/POS)</h3>
+          <h3>ERP &amp; POS Technical Support</h3>
           <p class="org">Spinel</p>
-          <p>Tested ERP and POS applications, including a salesman mobile app, POS and HR modules. Reproduced and reported bugs to developers and retested after fixes. Investigated issues using system logs, browser developer tools and SQL Server queries.</p>
+          <p>Supported ERP and POS systems covering inventory, sales, purchasing and HR, diagnosing faults reported by users and applying fixes. Tested the POS and HR modules and a salesman mobile app, reproducing and reporting bugs to developers and retesting after fixes. Investigated issues with system logs, browser developer tools, SQL Server (SSMS) and Redgate SQL Compare to correct data and reconcile databases. Configured items, units and price lists, documented support requests through to closure, and maintained the IT asset register.</p>
         </li>
         <li class="reveal">
           <p class="when">Apr 2025 – May 2025</p>
@@ -443,13 +446,14 @@
       <p class="label reveal">04 / skills</p>
       <h2 class="reveal">Toolbox</h2>
       <div class="skills">
+        <div class="skill-group wide reveal"><h3>general it</h3><div class="chips"><span>Technical support</span><span>Fault diagnosis &amp; troubleshooting</span><span>Computer hardware</span><span>Windows</span><span>Driver installation &amp; configuration</span><span>Printers &amp; peripherals</span><span>Device setup for new employees</span><span>IT asset registers</span></div></div>
         <div class="skill-group reveal"><h3>languages</h3><div class="chips"><span>JavaScript</span><span>Python</span><span>HTML</span><span>CSS</span><span>SQL</span></div></div>
-        <div class="skill-group reveal"><h3>front-end</h3><div class="chips"><span>React</span><span>React Native</span><span>Tailwind CSS</span></div></div>
+        <div class="skill-group reveal"><h3>front-end &amp; design</h3><div class="chips"><span>React</span><span>React Native</span><span>Tailwind CSS</span><span>Figma</span><span>UI/UX</span></div></div>
+        <div class="skill-group wide reveal"><h3>erp &amp; pos</h3><div class="chips"><span>Inventory, sales &amp; purchasing</span><span>Item, unit &amp; price-list setup</span><span>App testing</span><span>Bug reporting</span></div></div>
         <div class="skill-group reveal"><h3>apis</h3><div class="chips"><span>REST APIs</span><span>Postman</span><span>Swagger</span></div></div>
-        <div class="skill-group reveal"><h3>databases</h3><div class="chips"><span>Microsoft SQL Server</span><span>SSMS</span></div></div>
-        <div class="skill-group reveal"><h3>tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Firebase</span></div></div>
-        <div class="skill-group reveal"><h3>design</h3><div class="chips"><span>Figma</span><span>UI/UX</span></div></div>
-        <div class="skill-group reveal"><h3>qa &amp; support</h3><div class="chips"><span>Manual QA testing</span><span>Bug reporting</span><span>Technical support</span></div></div>
+        <div class="skill-group reveal"><h3>databases</h3><div class="chips"><span>Microsoft SQL Server</span><span>SSMS</span><span>Redgate SQL Compare</span></div></div>
+        <div class="skill-group wide reveal"><h3>dev tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Firebase</span></div></div>
+        <div class="skill-group wide reveal"><h3>office</h3><div class="chips"><span>Excel</span><span>Word</span><span>Outlook</span><span>Power Automate</span></div></div>
       </div>
     </div>
   </section>
@@ -459,7 +463,7 @@
     <div class="wrap">
       <p class="label reveal">05 / contact</p>
       <h2 class="reveal">Let's talk</h2>
-      <p class="lead reveal">Open to front-end, QA and technical support roles. The fastest way to reach me is email.</p>
+      <p class="lead reveal">Open to IT specialist, technical support and front-end roles. The fastest way to reach me is email.</p>
       <div class="contact-links">
         <a class="reveal" href="mailto:yazanwafeq551@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
